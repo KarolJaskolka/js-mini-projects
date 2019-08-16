@@ -39,5 +39,5 @@ function check(e){
     }
 }
 
-const button = document.getElementById('button');
+const button = document.getElementById('buttonAdd');
 button.addEventListener('click', addItem, false);

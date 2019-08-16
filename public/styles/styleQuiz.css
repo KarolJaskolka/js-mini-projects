@@ -1,0 +1,51 @@
+#question{
+    background-color: #808080;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+    text-align: center;
+    margin: 0px;
+}
+li{
+    background-color: #808080;
+    width: 60%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.checked{
+    background-color: #a8a13a;
+}
+.true{
+    background-color: #208020;
+}
+.false{
+    background-color: #80161f;
+}
+.basic{
+    background-color: #45606b;
+}
+#button{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #a8a13a;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    height: 50px;
+}
