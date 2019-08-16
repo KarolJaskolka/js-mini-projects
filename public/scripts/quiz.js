@@ -1,5 +1,5 @@
 let elQuestion = document.getElementById('question');
-let elOptions = document.getElementsByTagName('li');
+let elList = document.getElementsByTagName('ul')[0];
 let elScore = document.getElementById('score');
 let elButton = document.getElementById('button');
     
@@ -13,8 +13,10 @@ let test;
 const request = new XMLHttpRequest();
 
 request.onload = () => { 
-    test = JSON.parse(request.responseText); 
-    loadQuestion();
+    if(request.status == 200){
+        test = JSON.parse(request.responseText); 
+        loadQuestion();
+    }
 }
 
 request.open('GET','data/quiz.json',true);
@@ -26,19 +28,26 @@ function loadQuestion(){
     elScore.textContent = 'Score : ' + score;
     elQuestion.textContent = items.question;
 
-    for(let i=0; i<4; i++){
-        elOptions[i].textContent = items.options[i];
+    while(elList.firstChild){
+        elList.removeChild(elList.firstChild);
     }
 
-    for(let i=0; i<4; i++){
-        elOptions[i].className = 'basic';
+    for(let i=0; i<items.options.length; i++){
+        let newElement = document.createElement('li');
+        let newText = document.createTextNode(items.options[i]);
+        newElement.appendChild(newText);
+        newElement.className = 'basic';
+        elList.appendChild(newElement);
+        newElement.addEventListener('click',function(e){
+            select(e,i);
+        },false)
     }
-    
 }   
     
 function select(e, number){
     const target = e.target;
-    for(let i=0; i<4; i++){
+    let elOptions = document.getElementsByTagName('li');
+    for(let i=0; i< elOptions.length; i++){
         elOptions[i].className = 'basic';
     }
     target.className = 'checked';
@@ -47,6 +56,7 @@ function select(e, number){
     
 function check(){
     const items = test.test[current];
+    let elOptions = document.getElementsByTagName('li');
     if(selectedAnswer == items.answer){
         score++;
         elScore.textContent = 'Score : ' + score;
@@ -65,7 +75,7 @@ function check(){
 function next(){
     current++;
     selectedAnswer = 0;
-    if(current > 2){
+    if(current > test.test.length-1){
         current = 0;
         score = 0;
         alert('Game Over');
@@ -83,12 +93,6 @@ function action(){
     else{
         check();
     }
-}
-
-for(let i=0; i<4; i++){
-    elOptions[i].addEventListener('click',function(e){
-        select(e,i);
-    },false)
 }
 
 elButton.addEventListener('click',action,false);

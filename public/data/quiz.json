@@ -12,8 +12,13 @@
         },
         {
             "question":"Who won Ballon'Dor in 2018?",
-            "options": ["Cristiano Ronaldo","Leo Messi","Kylian Mbappe","Luka Modric"],
-            "answer":"3"
+            "options": ["Cristiano Ronaldo","Leo Messi","Luka Modric"],
+            "answer":"2"
+        },
+        {
+            "question":"Which stadium is not located in Europe?",
+            "options": ["Wembley","Bernabeu","Maracana","Camp Nou","Old Trafford"],
+            "answer":"2"
         }
     ]   
 }
