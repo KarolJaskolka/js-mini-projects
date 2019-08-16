@@ -1,0 +1,80 @@
+body{
+    background-color: #3e423e;
+    margin: 0px;
+}
+header{
+    background-color: #565e56;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 1000px;
+    height: 25px;
+    padding: 25px;
+}
+main{
+    background-color: #565e56;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 1000px;
+    height: 400px;
+    padding: 25px;
+}
+footer{
+    background-color: #565e56;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 1000px;
+    height: 25px;
+    padding: 25px;
+}
+#listHeader{
+    width: 380px;
+    padding: 10px;
+    margin: 0px auto 0px auto;
+    background-color: #4e7ea5;
+}
+#shopList{
+    background-color: #7d817d;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#addItem{
+    background-color: #7d817d;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 350px;
+    height: 25px;
+    padding: 25px;
+}
+#button{
+    -webkit-appearance: none;
+    border: 0px;
+    background-color: #66b18e;
+}
+ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+    text-align: center;
+    margin: 0px;
+}
+li{
+    width: 380;
+    height: 20px;
+    margin: 1px auto 1px auto;
+    padding: 5px;
+}
+.red{
+    background-color: #b33e3e;
+}
+.green{
+    background-color: #69ad69;
+}

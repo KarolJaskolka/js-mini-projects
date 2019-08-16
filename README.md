@@ -1,0 +1,1 @@
+Repository created to keep in one place my code during learning JavaScript. 
