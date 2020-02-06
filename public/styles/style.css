@@ -1,45 +1,89 @@
-body{
-    background-color: #505050;
-    color: #eeeeee;
+* {
     margin: 0px;
+    padding: 0px;
 }
-nav {
-    background-color: #707070;
-    margin: 0px auto 0px auto;
-    padding: 25px;
-    width: 950px;
+
+body{
+    background-color: #494948;
+    color: #eeeeee;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: linear-gradient(to right, #F0DB4F , rgb(139, 128, 56));
     text-align: center;
+    padding: 25px;
+    font-size: 2em;
+    margin-bottom: 25px;
+    margin: 16px;
 }
+
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    min-height: calc(100vh - 153.6px);
+    margin-bottom: 25px;
+    gap: 1em;
+}
+
+.wrapper{
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    padding: 2em;
+    align-items: center;
+}
+
+nav {
+    background-color: #9b703f;
+    grid-column: 1/2;
+    padding: 1em;
+    margin: 0em 1em;
+}
+
+nav a{
+    display: block;
+    padding: 1.25em;
+    margin-bottom: 0.75em;
+    background-color: #b1814b;
+}
+
+nav a:hover {
+    background-color: rgb(201, 144, 78);
+}
+
+.content{
+    grid-column: 2/6;
+}
+
+.link{
+    background-color: #e7e0e0;
+    text-align: center;
+    font-size: 1.5em;
+    color: #505050;
+    -webkit-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.75);
+    transition: transform .5s;
+}
+
+.link:hover{
+    transform: scale(1.1);
+}
+
+p{
+    padding: 0.5em;
+}
+
 a{
     color: #eeeeee;
     text-decoration: none;
 }
-nav a{
-    display: inline-block;
-    background-color: #505050;
-    border-radius: 10px;
-    min-width: 200px;
-    font-size: 20px;
-}
-header{
-    background-color: #707070;
-    margin: 0px auto 20px auto;
-    padding: 25px;
-    width: 950px;
-    text-align: center;   
-}
-main{
-    background-color: #707070;
-    margin: 20px auto 20px auto;
-    padding: 25px;
-    min-height: 400px;
-    width: 950px;
-    text-align: center;
-}
-footer{
-    background-color: #707070;
-    margin: 0px auto 0px auto;
-    width: 950px;
-    padding: 25px;
-    text-align: center;
+
+img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
 }

@@ -41,3 +41,12 @@ function check(e){
 
 const button = document.getElementById('buttonAdd');
 button.addEventListener('click', addItem, false);
+
+const input = document.getElementById('itemInput');
+input.addEventListener('keyup', function(e) {
+    if (e.keyCode === 13) {
+      e.preventDefault();
+      button.click();
+    }
+  },false
+);

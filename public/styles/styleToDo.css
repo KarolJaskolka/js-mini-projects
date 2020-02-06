@@ -1,47 +1,59 @@
-p {
-    width: 380px;
-    padding: 10px;
-    margin: 0px auto 0px auto;
-    background-color: #4e7ea5;
+.content{
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
 }
+
+section{
+    grid-column: 2/4;
+}
+
+p {
+    padding: 16px;
+    font-size: 1.5em;
+    background-color: #4e7ea5;
+    text-align: center;
+}
+
 #shopList{
     background-color: #808080;
-    margin: 10px auto 10px auto;
+    height: 400px;
     text-align: center;
-    width: 400px;
-    height: 250px;
     overflow-y: auto;
     overflow-x: hidden;
 }
+
 #addItem{
     background-color: #808080;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 380px;
-    height: 50px;
     padding: 10px;
 }
+
+#itemInput{
+    font-size: 1.25em;
+    text-align: center;
+    margin: 10px;
+}
+
 #buttonAdd{
     -webkit-appearance: none;
     background-color: #a8a13a;
-    border-radius: 10px;
     border: none;
-    width: 100px;
+    width: 125px;
     height: 25px;
-    margin-top: 5px;
+    margin-top: 20px 0px;
+    color: #eeeeee;
 }
 ul{
     list-style-type: none;
     padding-inline-start: 0px;
     text-align: center;
-    margin: 0px;
 }
 li{
-    width: 380;
-    height: 20px;
-    margin: 1px auto 1px auto;
-    padding: 5px;
+    margin: 2px 0px;
+    padding: 20px;
+    font-size: 1.25em;
 }
 .red{
     background-color: #b33e3e;

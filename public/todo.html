@@ -2,31 +2,37 @@
 <html lang="pl">
     <head>
         <meta charset="utf-8">
-        <title>Title</title>
+        <title>Shopping List</title>
         <link rel="stylesheet" type="text/css" href="/styles/style.css"/>
         <link rel="stylesheet" type="text/css" href="/styles/styleToDo.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <a href="index.html">LOGO</a>
+            <a href="index.html">JAVASCRIPT</a>
         </header>
-        <nav>
-            <a href="quiz.html">Quiz</a>
-            <a href="todo.html">Shopping List</a>
-        </nav>
         <main>
-            <p>SHOP LIST</p>
-            <div id="shopList">
-                <ul></ul>
+            <nav>
+                <a href="quiz.html">Form</a>
+                <a href="todo.html">Hangman</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="todo.html">Shopping List</a>
+                <a href="quiz.html">Tic Tac Toe</a>
+                <a href="todo.html">Tip Calculator</a>
+            </nav>
+            <div class="content">
+                <section>
+                    <p>SHOPPING LIST</p>
+                    <div id="shopList">
+                        <ul></ul>
+                    </div>
+                   <div id="addItem">
+                       <input type="text" id="itemInput"> </br>
+                       <input type="submit" id="buttonAdd" value="ADD">
+                   </div>
+                </section>
             </div>
-           <div id="addItem">
-               <input type="text" id="itemInput"> </br>
-               <input type="submit" id="buttonAdd" value="ADD">
-           </div>
            <script type="text/javascript" src = "/scripts/item.js"></script>
         </main>
-        <footer>
-            FOOTER
-        </footer>
     </body>
 </html>
