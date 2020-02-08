@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/styleTicTacToe.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">JAVASCRIPT</a>
+        </header>
+        <main>
+            <nav>
+                <a href="form.html">Form</a>
+                <a href="hangman.html">Hangman</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="todo.html">Shopping List</a>
+                <a href="tic-tac-toe.html">Tic Tac Toe</a>
+                <a href="tip-calculator.html">Tip Calculator</a>
+            </nav>
+            <div class="content">
+                <section class="players">
+                    <p class="name"></p>
+                    <input type="text" class="prompt" placeholder="Player X">
+                    <p class="warning">Name cannot be blank</p>
+                    <p class="name"></p>
+                    <input type="text" class="prompt" placeholder="Player O">
+                    <p class="warning">Name cannot be blank</p>
+                    <button id="btnStart">Start!</button>
+                    <p class="turn"></p>
+                </section>
+                <section class="game">
+                    <div class="board"></div>
+                </section>
+                <button id="btnRestart">Play Again</button>
+            </div>
+            <script type="text/javascript" src="scripts/tic-tac-toe.js"></script>
+        </main>
+    </body>
+</html>

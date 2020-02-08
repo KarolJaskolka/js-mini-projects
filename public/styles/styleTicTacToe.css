@@ -1,0 +1,129 @@
+.players{
+    text-align: center;
+    padding: 1em;
+}
+
+.prompt{
+    font-size: 1em;
+    padding: 0.1em;
+}
+
+#btnStart{
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    text-decoration: none;
+    border: none;
+    background-color: #F0DB4F;
+    display: inline-block;
+    outline: none;
+}
+
+#btnStart:hover{
+    background-color: rgb(190, 173, 61);
+}
+
+#btnRestart{
+    display: none;
+    margin: 1em auto;
+    padding: 1em;
+    -webkit-appearance: none;
+    text-decoration: none;
+    border: none;
+    background-color: #62de2c;
+    outline: none;
+}
+
+#btnRestart:hover{
+    background-color: #58b62f;
+}
+
+.name {
+    display: none;
+    font-size: 1.5em;
+}
+
+.game{
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.board{
+    background-color: black;
+    grid-column: 3/6;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    display: none;
+    gap: 5px;
+}
+
+input {
+    background-color: #494948;
+    outline: 0;
+    border-width: 0px  0px 2px 0px;
+    border-color: #e71414;
+    color: #eeeeee;
+    min-width: 250px;
+    display: block;
+    margin: 1em auto;
+}
+
+input[type="text"]
+{
+    font-size: 1.5em;
+}
+
+input:focus{
+    border-color: #F0DB4F;
+}
+
+.green{
+    border-color: #27a323;
+}
+
+.tile{
+    background-color: #494948;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.tileHover:hover{
+    background-color: #72726f;
+}
+
+.O{
+    background-image: url('../images/O.png');
+    background-position: center;
+    background-size: 75%;
+}
+
+.X{
+    background-image: url('../images/X.png');
+    background-position: center;
+    background-size: 75%;
+}
+
+.warning{
+    color: #e71414;
+    display: none;
+}
+
+.turn {
+    font-size: 1.5em;
+    color: #F0DB4F;
+}
+
+@media (max-width:1000px){
+    
+    .game{
+        grid-template-columns: repeat(2,1fr);
+        margin: 1em 0px;
+    }
+    
+    .board{
+        grid-column: 1/3;
+    }
+    
+}
