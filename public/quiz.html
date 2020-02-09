@@ -8,25 +8,29 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <a href="index.html">JAVASCRIPT</a>
-        </header>
-        <main>
-            <nav>
-                <a href="form.html">Form</a>
-                <a href="hangman.html">Hangman</a>
-                <a href="quiz.html">Quiz</a>
-                <a href="todo.html">Shopping List</a>
-                <a href="tic-tac-toe.html">Tic Tac Toe</a>
-                <a href="tip-calculator.html">Tip Calculator</a>
-            </nav>
-            <div class="content">
-                <div id="score"></div>
-                <div id="question"></div>
-                <ul></ul>
-                <input id="button" class="checked" type="submit" value="Check">
-            </div>
-            <script type="text/javascript" src = "scripts/quiz.js"></script>
-        </main>
+        <div class="wrapper">
+            <header>
+                <a href="index.html">JAVASCRIPT</a>
+            </header>
+            <main>
+                <div class="content">
+                    <nav>
+                        <a href="form.html">Form</a>
+                        <a href="hangman.html">Hangman</a>
+                        <a href="quiz.html">Quiz</a>
+                        <a href="todo.html">Shopping List</a>
+                        <a href="tic-tac-toe.html">Tic Tac Toe</a>
+                        <a href="tip-calculator.html">Tip Calculator</a>
+                    </nav>
+                    <section class="quiz">
+                        <div id="score"></div>
+                        <div id="question"></div>
+                        <ul></ul>
+                        <input id="button" class="checked" type="submit" value="Check">
+                    </section>
+                </div>
+                <script type="text/javascript" src = "scripts/quiz.js"></script>
+            </main>
+        </div>
     </body>
 </html>

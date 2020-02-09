@@ -1,6 +1,10 @@
+.tic-tac-toe{
+    grid-column: 2/6;
+}
+
 .players{
     text-align: center;
-    padding: 1em;
+    padding-bottom: 0.5em;
 }
 
 .prompt{
@@ -27,7 +31,7 @@
 #btnRestart{
     display: none;
     margin: 1em auto;
-    padding: 1em;
+    padding: 0.75em;
     -webkit-appearance: none;
     text-decoration: none;
     border: none;
@@ -41,11 +45,11 @@
 
 .name {
     display: none;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .game{
-    margin: 1em;
+    margin-top: 0.5em;
     display: grid;
     grid-template-columns: repeat(7,1fr);
 }
@@ -97,12 +101,14 @@ input:focus{
     background-image: url('../images/O.png');
     background-position: center;
     background-size: 75%;
+    background-repeat: no-repeat;
 }
 
 .X{
     background-image: url('../images/X.png');
     background-position: center;
     background-size: 75%;
+    background-repeat: no-repeat;
 }
 
 .warning{
@@ -111,19 +117,73 @@ input:focus{
 }
 
 .turn {
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #F0DB4F;
 }
 
 @media (max-width:1000px){
     
+    .tic-tac-toe{
+        grid-column: 1/6;   
+    }
+    
+    input[type="text"]
+    {
+        font-size: 2.5em;
+    }
+
+    .name {
+        padding: 1em;
+        font-size: 1.5em;
+    }
+
+    .turn {
+        padding: 1em;
+        font-size: 1.5em;
+    }
+
+    .players{
+        padding-bottom: 1em;
+        font-size: 1.5em;
+    }
+
+    #btnStart{
+        margin: 2em auto;
+        padding: 2em;
+        font-size: 1.5em;
+    }
+
     .game{
-        grid-template-columns: repeat(2,1fr);
-        margin: 1em 0px;
+
+        grid-template-columns: repeat(5,1fr);
     }
     
     .board{
-        grid-column: 1/3;
+        grid-column: 2/5;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .tile{
+        min-width: 150px;
+        min-height: 250px;
+    }
+
+    .O{
+        background-size: 100%;
     }
     
+    .X{
+        background-size: 100%;
+    }
+
+    #btnRestart{
+        display: none;
+        margin: 35px auto;
+        padding: 25px;
+        font-size: 32px;
+    }
+    
+
 }

@@ -1,10 +1,6 @@
-.content{
-    grid-template-columns: repeat(4, 1fr);
-    display: grid;
-}
-
 section{
-    grid-column: 2/4;
+    grid-column: 2/6;
+    padding: 0em 5em;
 }
 
 p {
@@ -16,14 +12,14 @@ p {
 
 #shopList{
     background-color: #808080;
-    height: 400px;
+    min-height: 370px;
     text-align: center;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 #addItem{
-    background-color: #808080;
+    background-color: #4e7ea5;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -34,6 +30,12 @@ p {
     font-size: 1.25em;
     text-align: center;
     margin: 10px;
+    background-color: #4e7ea5;
+    outline: 0;
+    border-width: 0px  0px 2px 0px;
+    border-color: #154564;
+    color: #eeeeee;
+    min-width: 250px;
 }
 
 #buttonAdd{
@@ -60,4 +62,26 @@ li{
 }
 .green{
     background-color: #69ad69;
+}
+
+@media (max-width: 1000px){
+    section{
+        grid-column: 1/6;
+        font-size: 2em;
+        padding: 0px;
+    }
+
+    #shopList{
+        min-height: 60vh;
+    }
+
+    #buttonAdd{
+        width: initial;
+        height: initial;
+        border-radius: 15%;
+        font-size: 1.25em;
+        padding: 10px;
+        margin: 10px;
+    }
+
 }

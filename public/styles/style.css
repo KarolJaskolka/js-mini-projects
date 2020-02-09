@@ -10,43 +10,37 @@ body{
     box-sizing: border-box;
 }
 
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
 header{
+    grid-column: 2/5;
     background-image: linear-gradient(to right, #F0DB4F , rgb(139, 128, 56));
     text-align: center;
-    padding: 25px;
     font-size: 2em;
-    margin-bottom: 25px;
-    margin: 16px;
+    padding: 25px;
+    margin: 25px 0px;
 }
 
 main{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    min-height: calc(100vh - 136.6px);
-    margin-bottom: 16px;
-    gap: 1em;
-}
-
-.wrapper{
     grid-column: 2/5;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
-    padding: 2em;
-    align-items: center;
+    min-height: calc(100vh - 137.6px);
+    gap: 1em;
 }
 
 nav {
     background-color: #9b703f;
     grid-column: 1/2;
-    padding: 1em;
-    margin: 0em 1em;
 }
 
 nav a{
     display: block;
     padding: 1.25em;
-    margin-bottom: 0.75em;
+    border-bottom: 1px solid black;
     background-color: #b1814b;
 }
 
@@ -54,9 +48,12 @@ nav a:hover {
     background-color: rgb(201, 144, 78);
 }
 
-.content{
-    grid-column: 2/6;
-    margin: 0px 16px;
+.content {
+    grid-column: 1/4;
+    margin-bottom: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .link{
@@ -67,11 +64,11 @@ nav a:hover {
     -webkit-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.75);
-    transition: transform .5s;
+    transition: transform .25s;
 }
 
 .link:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 p{
@@ -91,30 +88,39 @@ img {
 
 @media (max-width:1000px){
     
+    .wrapper{  
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+    }
+
     header{
         margin: 0px 0px 25px 0px;
+        grid-column: 1/2;
+        font-size: 4em;
     }
 
-    main{
-        grid-template-columns: repeat(2, 1fr);
-        margin: 0;
-    }
-    
-    .content{
-        grid-column: 1/3;
-        margin: 0px 16px;
+    main {
+        grid-column: 1/2;
+        min-height:initial;
+        grid-template-columns: repeat(5, 1fr);
+        margin-bottom: 25px;
     }
 
-    .wrapper{
-        grid-column: 1/3;
-        margin: 0;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5em;
-        padding: 0.5em;
+    main a {
+        grid-column: 2/5;
     }
-    
+
+    img {
+        max-height: 300px;
+    }
+
     nav {
         display: none;
+    }
+
+    .content{
+        grid-column: 1/6;
     }
 
     .link:hover{
