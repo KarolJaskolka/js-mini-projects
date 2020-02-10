@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="stylesheet" href="styles/styleForm.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <a href="index.html">JAVASCRIPT</a>
+            </header>
+            <main>
+                <div class="content">
+                    <nav>
+                        <a href="form.html">Form</a>
+                        <a href="hangman.html">Hangman</a>
+                        <a href="quiz.html">Quiz</a>
+                        <a href="todo.html">Shopping List</a>
+                        <a href="tic-tac-toe.html">Tic Tac Toe</a>
+                        <a href="tip-calculator.html">Tip Calculator</a>
+                    </nav>
+                    <div class="formWrapper">
+                        <!--Form validation using js-->
+                        <form novalidate>
+                            <input type="text" placeholder="Login" id="login">
+                            <span class="warning"></span>
+                            <input type="password" placeholder="Password" id="password">
+                            <span class="warning"></span>
+                            <input type="text" placeholder="First name" id="firstName">
+                            <span class="warning"></span>
+                            <input type="text" placeholder="Last name" id="lastName">
+                            <span class="warning"></span>
+                            <input type="email" placeholder="E-mail" id="email">
+                            <span class="warning"></span>
+                            <input type="text" placeholder="Phone number" id="phone">
+                            <span class="warning"></span>
+                            <button id="btnConfirm">Confirm</button>
+                        </form>
+                    </div>
+                </div>
+                <script type="text/javascript" src = "scripts/form.js"></script>
+            </main>
+        </div>
+    </body>
+</html>

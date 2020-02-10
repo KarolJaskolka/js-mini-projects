@@ -1,0 +1,71 @@
+form{
+    padding: 1em;
+    background-color: #312f2f;
+    -webkit-box-shadow: 0px 0px 19px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 19px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 19px -2px rgba(0,0,0,0.75);
+}
+
+span{
+    padding: 0.1em;
+    font-size: 12px;
+}
+
+.formWrapper{
+    grid-column: 2/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"], input[type="email"]{
+    display: block;
+    min-width: 350px;
+    background-color: #312f2f;
+    border-width: 0px 0px 1px 0px;
+    border-color: #4623c5;
+    padding: 0.75em;
+    margin: 1em;
+    outline: 0em;
+    color: #eeeeee;
+    transition: 0.5s;
+}
+
+#btnConfirm{
+    padding: 1em;
+    background-color: #1f6d4c;
+    border-width: 0px;
+    outline: 0px;
+    border-radius: 5%;
+    margin: 1em 0em;
+    color: #a19e9e;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus{
+    border-color: #9f20be;
+}
+
+#btnConfirm:hover{
+    background-color: #199778;
+    color: #eeeeee;
+    -webkit-box-shadow: 0px 0px 25px 0px #199778;
+    -moz-box-shadow: 0px 0px 25px 0px #199778;
+    box-shadow: 0px 0px 25px 0px #199778;
+}
+
+.warning{
+    display:none;
+    color: #e71414;
+}
+
+@media (max-width:1000px){
+    .formWrapper{
+        grid-column: 1/6;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+}

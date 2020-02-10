@@ -1,25 +1,24 @@
 section{
-    grid-column: 2/6;
-    padding: 0em 5em;
+    grid-column: 3/5;
 }
 
 p {
     padding: 16px;
     font-size: 1.5em;
-    background-color: #4e7ea5;
+    background-color: #3a6385;
     text-align: center;
 }
 
 #shopList{
     background-color: #808080;
-    min-height: 370px;
+    height: calc(100% - 161.2px);
     text-align: center;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 #addItem{
-    background-color: #4e7ea5;
+    background-color: #3a6385;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -30,12 +29,15 @@ p {
     font-size: 1.25em;
     text-align: center;
     margin: 10px;
-    background-color: #4e7ea5;
+    background-color: #3a6385;
     outline: 0;
     border-width: 0px  0px 2px 0px;
     border-color: #154564;
     color: #eeeeee;
-    min-width: 250px;
+}
+
+#itemInput:focus{
+    border-color: #a8a13a;
 }
 
 #buttonAdd{
@@ -43,10 +45,15 @@ p {
     background-color: #a8a13a;
     border: none;
     width: 125px;
-    height: 25px;
-    margin-top: 20px 0px;
+    padding: 5px;
+    margin: 5px;
     color: #eeeeee;
 }
+
+#buttonAdd:hover{
+    background-color: #cac13e;
+}
+
 ul{
     list-style-type: none;
     padding-inline-start: 0px;
@@ -66,22 +73,17 @@ li{
 
 @media (max-width: 1000px){
     section{
-        grid-column: 1/6;
-        font-size: 2em;
+        grid-column: 2/5;
+        font-size: 1.5em;
         padding: 0px;
     }
 
     #shopList{
-        min-height: 60vh;
+        height: 60vh;
     }
 
     #buttonAdd{
-        width: initial;
-        height: initial;
-        border-radius: 15%;
         font-size: 1.25em;
-        padding: 10px;
-        margin: 10px;
     }
 
 }

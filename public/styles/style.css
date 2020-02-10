@@ -86,6 +86,14 @@ img {
     object-fit: cover;
 }
 
+.green{
+    border-color: #27a323;
+}
+
+.red{
+    border-color: #e71414;
+}
+
 @media (max-width:1000px){
     
     .wrapper{  

@@ -24,12 +24,12 @@ btnRestart.addEventListener('click', restart, false);
 // input validation
 function check(e){
     const elem = e.target;
-    if(elem.value === ''){
-        elem.nextSibling.nextSibling.style.display = 'block';
+    if(elem.value.trim() === ''){
+        elem.nextElementSibling.style.display = 'block';
         elem.className = 'prompt';
     }
     else{
-        elem.nextSibling.nextSibling.style.display = 'none';
+        elem.nextElementSibling.style.display = 'none';
         elem.className = 'prompt green';
     }  
 }

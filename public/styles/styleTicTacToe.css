@@ -83,10 +83,6 @@ input:focus{
     border-color: #F0DB4F;
 }
 
-.green{
-    border-color: #27a323;
-}
-
 .tile{
     background-color: #494948;
     min-width: 100px;
