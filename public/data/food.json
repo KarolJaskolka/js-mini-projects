@@ -1,0 +1,78 @@
+{
+    "pizza": [
+        {
+            "name": "None",
+            "price": 0.00
+        },
+        {
+            "name": "Classic",
+            "price": 5.99
+        },
+        {
+            "name": "Margherita",
+            "price": 6.99
+        },
+        {
+            "name": "Peperoni",
+            "price": 7.99
+        },
+        {
+            "name": "Chicken",
+            "price": 8.99
+        },
+        {
+            "name": "Mexicana",
+            "price": 9.99
+        }
+    ],
+    "size": [
+        {
+            "name": "small",
+            "price": 0.00
+        },
+        {
+            "name": "medium",
+            "price": 2.50
+        },
+        {
+            "name": "large",
+            "price": 5.00
+        }
+    ],
+    "extra": [  
+        {
+            "name": "Ham",
+            "price": 0.99
+        },
+        {
+            "name": "Cheese",
+            "price": 0.99
+        },
+        {
+            "name": "Mushrooms",
+            "price": 1.99
+        }
+    ],
+    "drink": [
+        {
+            "name": "None",
+            "price": 0.00
+        },
+        {
+            "name": "Water",
+            "price": 0.99
+        },
+        {
+            "name": "Apple juice",
+            "price": 1.99
+        },
+        {
+            "name": "Orange juice",
+            "price": 1.99
+        },
+        {
+            "name": "Coca-cola",
+            "price": 2.99
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+section {
+    grid-column: 2/6;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#calculator{
+    padding: 16px 32px;
+    background-color: #312f2f;
+    font-size: 1.25em;
+}
+
+select{
+    display: block;
+    margin: 1em 0em;
+    width: 100%;
+    background-color: #4b4747;
+    border-color: #dddddd;
+    color: #eeeeee;
+    font-size: 16px; 
+}
+
+span{
+    margin: 1em 0em;
+    display: block;
+    color: #F0DB4F;
+}
+
+label{
+    margin-right: 0.5em;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    margin-right: 0.25em;
+}
+
+@media (max-width:1000px){
+    section{
+        grid-column: 1/6;
+    }
+}
