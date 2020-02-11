@@ -64,12 +64,12 @@ li{
 
     .quiz {
         grid-column: 1/6;
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
 
     #button{
         margin-top: 1em;
-        font-size: 1.5em;
+        font-size: 1em;
         padding: 0.5em;
         width: initial;
         height: initial;

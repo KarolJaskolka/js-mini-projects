@@ -35,12 +35,12 @@
     -webkit-appearance: none;
     text-decoration: none;
     border: none;
-    background-color: #62de2c;
+    background-color: #58b62f;
     outline: none;
 }
 
 #btnRestart:hover{
-    background-color: #58b62f;
+    background-color: #4b922d;
 }
 
 .name {
@@ -69,7 +69,7 @@ input {
     border-width: 0px  0px 2px 0px;
     border-color: #e71414;
     color: #eeeeee;
-    min-width: 250px;
+    min-width: 200px;
     display: block;
     margin: 1em auto;
 }
@@ -125,32 +125,21 @@ input:focus{
     
     input[type="text"]
     {
-        font-size: 2.5em;
+        font-size: 1.25em;
     }
 
-    .name {
+    .name, .turn, .players {
         padding: 1em;
-        font-size: 1.5em;
-    }
-
-    .turn {
-        padding: 1em;
-        font-size: 1.5em;
-    }
-
-    .players{
-        padding-bottom: 1em;
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 
     #btnStart{
         margin: 2em auto;
         padding: 2em;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .game{
-
         grid-template-columns: repeat(5,1fr);
     }
     
@@ -158,27 +147,23 @@ input:focus{
         grid-column: 2/5;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        gap: 10px;
+        gap: 5px;
     }
 
     .tile{
-        min-width: 150px;
-        min-height: 250px;
+        min-width: 60px;
+        min-height: 60px;
     }
 
-    .O{
+    .O, .X{
         background-size: 100%;
     }
     
-    .X{
-        background-size: 100%;
-    }
-
     #btnRestart{
         display: none;
-        margin: 35px auto;
-        padding: 25px;
-        font-size: 32px;
+        margin: 25px auto;
+        padding: 15px;
+        font-size: 1.25em;
     }
     
 

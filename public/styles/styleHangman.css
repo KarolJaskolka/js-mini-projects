@@ -1,0 +1,96 @@
+section {
+    grid-column: 2/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#info {
+    margin: 1em;
+}
+
+#puzzleBox{
+    margin: 1.5em 1em;
+}
+
+#lettersBox{
+    margin: 1.5em auto;
+    width: 75%;
+}
+
+.square{
+    padding: 1em;
+    margin: 0.1em;
+    display: inline-block;
+    min-width: 17.5px;
+}
+
+.puzzle{
+    background-color: #2d457a;
+
+}
+
+.letter{
+    background-color: #2d457a;
+}
+
+.letter:hover{
+    background-color: #4a66a1;
+}
+
+.well {
+    background-color: #3faa59;
+}
+
+.bad {
+    background-color: #a53e37;
+}
+
+.win {
+    background-color: #6e6923;
+}
+
+.heartGood{
+    background-image: url('../images/heartGood.png');
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+}
+
+.heartBad{
+    background-image: url('../images/heartBad.png');
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+}
+
+br{
+    margin: 1em 0em;
+}
+
+#btnRestart{
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: #58b62f;
+    outline: 0;
+    border-width: 0;
+    display: none;
+}
+
+@media (max-width: 1000px){
+    section {
+        grid-column: 1/6;
+    }
+
+    .puzzle, .win{
+        font-size: 11px;
+        min-width: 8px;
+    }
+}

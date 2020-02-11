@@ -73,8 +73,8 @@ li{
 
 @media (max-width: 1000px){
     section{
-        grid-column: 2/5;
-        font-size: 1.5em;
+        grid-column: 1/6;
+        font-size: 1em;
         padding: 0px;
     }
 

@@ -68,4 +68,8 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
         font-size: 16px;
     }
 
+    input[type="text"], input[type="password"], input[type="email"]{
+        min-width: 250px;
+    }
+
 }

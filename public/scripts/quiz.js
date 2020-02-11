@@ -76,9 +76,9 @@ function next(){
     current++;
     selectedAnswer = 0;
     if(current > test.test.length-1){
+        alert('Game Over\n Score : ' + score);
         current = 0;
         score = 0;
-        alert('Game Over');
     }
     loadQuestion();
 }
