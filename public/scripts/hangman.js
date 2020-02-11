@@ -26,7 +26,7 @@ xhr.open('GET','data/hangman.json');
 xhr.send(null);
 
 function getRandNum(){
-    if(words.length) return (Math.random()*100).toFixed(0) % words.length;
+    if(words.length) return (Math.random()*1000).toFixed(0) % words.length;
     return 0;
 }
 
