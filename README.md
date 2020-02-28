@@ -1,8 +1,17 @@
+## Requirements
+
+- Node.js
+
+## Running the project
+
+- npm install
+- npm start
+
+## Description
+
 Repository created to keep in one place my code during learning JavaScript. 
 
-My main goal was to use only HTML, CSS, AJAX (to send fake requests) and pure JavaScript to focus on elementary skills, before using frameworks like Angular or React.
-
-I used Node.js/Express.js just to run website on my smartphone via LAN (at first I had idea to create REST API using Node but it will be another project).
+My main goal was to use only HTML, CSS, AJAX (to send fake requests) and pure JavaScript to focus on elementary skills.
 
 Every (website) subpage in this respository is like mini project, because I think they are too small to keep them in seperate respositories :
 
